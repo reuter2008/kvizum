@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kvíz: Dějiny umění</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #3b82f6;
+            --accent-hover: #2563eb;
+            --correct-color: #10b981;
+            --correct-bg: rgba(16, 185, 129, 0.15);
+            --incorrect-color: #ef4444;
+            --incorrect-bg: rgba(239, 68, 68, 0.15);
+            --border-color: #334155;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .quiz-container {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            width: 100%;
+            max-width: 600px;
+            padding: 24px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .quiz-header {
+            margin-bottom: 20px;
+        }
+
+        .quiz-top-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .quiz-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-color);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .quiz-stats {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .quiz-description {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.45;
+            margin-bottom: 14px;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 6px;
+            background-color: var(--border-color);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: var(--accent-color);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .question-image-wrap {
+            margin-bottom: 16px;
+            display: none;
+        }
+
+        .question-image-wrap.visible {
+            display: block;
+        }
+
+        .question-image-wrap img {
+            width: 100%;
+            max-height: 280px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            border: 1px solid var(--border-color);
+            display: block;
+        }
+
+        .question-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.45;
+            margin-bottom: 20px;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .option-btn {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 14px 16px;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: var(--accent-color);
+            background-color: rgba(59, 130, 246, 0.08);
+        }
+
+        .option-btn:disabled {
+            cursor: default;
+        }
+
+        .option-btn.correct {
+            border-color: var(--correct-color);
+            background-color: var(--correct-bg);
+            color: #34d399;
+        }
+
+        .option-btn.incorrect {
+            border-color: var(--incorrect-color);
+            background-color: var(--incorrect-bg);
+            color: #f87171;
+        }
+
+        .explanation-box {
+            background-color: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent-color);
+            padding: 12px 16px;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .explanation-box.visible {
+            display: block;
+        }
+
+        .next-btn, .restart-btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            width: 100%;
+            display: none;
+        }
+
+        .next-btn:hover, .restart-btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .next-btn.visible, .restart-btn.visible {
+            display: block;
+        }
+
+        .result-screen {
+            text-align: center;
+            display: none;
+            padding: 20px 0;
+        }
+
+        .result-score {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 8px;
+        }
+
+        .result-points {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 12px;
+        }
+
+        .result-text {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div id="quiz-body">
+            <div class="quiz-header">
+                <div class="quiz-top-meta">
+                    <div class="quiz-title" id="quiz-title">Načítání tématu...</div>
+                    <div class="quiz-stats" id="quiz-stats">Otázka 0 / 20 • Body: 0</div>
+                </div>
+                <div class="quiz-description" id="quiz-description">Načítání popisu kvízu...</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="question-image-wrap" id="question-image-wrap">
+                <img id="question-image" src="" alt="Ilustrace k otázce">
+            </div>
+
+            <div class="question-text" id="question-text">Načítání otázek...</div>
+
+            <div class="options-container" id="options-container"></div>
+
+            <div class="explanation-box" id="explanation-box"></div>
+
+            <button class="next-btn" id="next-btn" onclick="nextQuestion()">Pokračovat →</button>
+        </div>
+
+        <div class="result-screen" id="result-screen">
+            <div class="quiz-title" id="result-quiz-title">VÝSLEDEK KVÍZU</div>
+            <div class="result-score" id="result-score">0 / 0</div>
+            <div class="result-points" id="result-points">Body: 0 / 0</div>
+            <div class="result-text" id="result-text">...</div>
+            <button class="restart-btn visible" onclick="restartQuiz()">Zkusit znovu 🔄</button>
+        </div>
+    </div>
+
+    <script>
+        const DATA_DIR = 'data/';
+        const IMG_BASE_PATH = 'img/';
+        const QUESTIONS_PER_QUIZ = 20;
+        const POINTS_PER_CORRECT = 10;
+
+        const DIFF_LABELS = {
+            easy: 'Lehký',
+            hard: 'Těžký'
+        };
+
+        const DEFAULT_DESCRIPTIONS = {
+            easy: 'Základní okruh otázek z dějin umění (náhodný výběr 20 otázek).',
+            hard: 'Rozšířený a hlubší okruh otázek z dějin umění (náhodný výběr 20 otázek).'
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const topicParam = params.get('topic') || '1';
+        const diffParam = (params.get('diff') || 'easy').toLowerCase();
+        const topicFileNum = String(topicParam).padStart(2, '0');
+        const dataUrl = `${DATA_DIR}topic_${topicFileNum}.json`;
+
+        let quizMeta = {
+            title: 'DĚJINY UMĚNÍ',
+            description: DEFAULT_DESCRIPTIONS[diffParam] || DEFAULT_DESCRIPTIONS.easy
+        };
+        let topicQuestionBank = [];
+        let activeQuizData = [];
+        let currentQuestionIndex = 0;
+        let correctCount = 0;
+        let points = 0;
+
+        const quizBodyEl = document.getElementById('quiz-body');
+        const quizTitleEl = document.getElementById('quiz-title');
+        const resultQuizTitleEl = document.getElementById('result-quiz-title');
+        const quizDescriptionEl = document.getElementById('quiz-description');
+        const quizStatsEl = document.getElementById('quiz-stats');
+        const questionImageWrapEl = document.getElementById('question-image-wrap');
+        const questionImageEl = document.getElementById('question-image');
+        const questionTextEl = document.getElementById('question-text');
+        const optionsContainerEl = document.getElementById('options-container');
+        const explanationBoxEl = document.getElementById('explanation-box');
+        const nextBtnEl = document.getElementById('next-btn');
+        const progressBarEl = document.getElementById('progress-bar');
+        const resultScreenEl = document.getElementById('result-screen');
+        const resultScoreEl = document.getElementById('result-score');
+        const resultPointsEl = document.getElementById('result-points');
+        const resultTextEl = document.getElementById('result-text');
+
+        function shuffleArray(items) {
+            const arr = [...items];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        function applyQuizMeta() {
+            document.title = `Kvíz: ${quizMeta.title}`;
+            quizTitleEl.textContent = quizMeta.title;
+            resultQuizTitleEl.textContent = `VÝSLEDEK — ${quizMeta.title}`;
+            quizDescriptionEl.textContent = quizMeta.description;
+        }
+
+        function updateStats() {
+            const total = activeQuizData.length || QUESTIONS_PER_QUIZ;
+            const currentNum = Math.min(currentQuestionIndex + 1, total);
+            quizStatsEl.textContent = `Otázka ${currentNum} / ${total} • Body: ${points}`;
+        }
+
+        async function loadTopicDatabase() {
+            applyQuizMeta();
+            try {
+                const response = await fetch(dataUrl);
+                if (!response.ok) throw new Error(`Soubor ${dataUrl} nebyl nalezen`);
+                const payload = await response.json();
+
+                let rawQuestions = [];
+                if (Array.isArray(payload)) {
+                    rawQuestions = payload;
+                } else if (payload && Array.isArray(payload.questions)) {
+                    rawQuestions = payload.questions;
+                    const diffLabel = DIFF_LABELS[diffParam] || diffParam;
+                    const baseName = payload.topic_name || (payload.meta && payload.meta.title) || `Téma ${topicParam}`;
+                    quizMeta.title = `${baseName} (${diffLabel})`;
+
+                    if (payload.descriptions && payload.descriptions[diffParam]) {
+                        quizMeta.description = payload.descriptions[diffParam];
+                    } else if (payload.description) {
+                        quizMeta.description = payload.description;
+                    } else if (payload.meta && payload.meta.description) {
+                        quizMeta.description = payload.meta.description;
+                    }
+                } else {
+                    throw new Error('Neplatný formát JSON databáze');
+                }
+
+                const filtered = rawQuestions.filter(q => {
+                    if (!q.difficulty) return true;
+                    return String(q.difficulty).toLowerCase() === diffParam;
+                });
+
+                topicQuestionBank = filtered.length > 0 ? filtered : rawQuestions;
+                if (topicQuestionBank.length === 0) {
+                    throw new Error('Pro zvolené téma a obtížnost nejsou k dispozici žádné otázky');
+                }
+
+                applyQuizMeta();
+                initQuiz();
+            } catch (error) {
+                questionTextEl.textContent = `Chyba při načítání databáze (${dataUrl}). Zkontrolujte složku data/.`;
+                console.error(error);
+            }
+        }
+
+        function initQuiz() {
+            const shuffledPool = shuffleArray(topicQuestionBank);
+            const count = Math.min(QUESTIONS_PER_QUIZ, shuffledPool.length);
+            activeQuizData = shuffledPool.slice(0, count);
+            currentQuestionIndex = 0;
+            correctCount = 0;
+            points = 0;
+            quizBodyEl.style.display = 'block';
+            resultScreenEl.style.display = 'none';
+            renderQuestion();
+        }
+
+        function renderQuestion() {
+            const q = activeQuizData[currentQuestionIndex];
+            const total = activeQuizData.length;
+
+            updateStats();
+            const progressPercent = (currentQuestionIndex / total) * 100;
+            progressBarEl.style.width = `${progressPercent}%`;
+
+            if (q.image && String(q.image).trim() !== '') {
+                const imgVal = String(q.image).trim();
+                questionImageEl.src = imgVal.startsWith('http') || imgVal.startsWith('/') ? imgVal : `${IMG_BASE_PATH}${imgVal}`;
+                questionImageWrapEl.classList.add('visible');
+            } else {
+                questionImageEl.removeAttribute('src');
+                questionImageWrapEl.classList.remove('visible');
+            }
+
+            questionTextEl.textContent = `${currentQuestionIndex + 1}. ${q.question}`;
+            optionsContainerEl.innerHTML = '';
+            explanationBoxEl.classList.remove('visible');
+            nextBtnEl.classList.remove('visible');
+
+            const rawOptions = Array.isArray(q.options)
+                ? [...q.options]
+                : [q.opt_1, q.opt_2, q.opt_3].filter(v => v !== undefined && v !== null && String(v).trim() !== '');
+
+            let correctIdx = 0;
+            if (typeof q.correct === 'number') {
+                correctIdx = q.correct >= 1 && q.correct <= rawOptions.length ? q.correct - 1 : q.correct;
+            } else if (typeof q.correct === 'string') {
+                const parsed = parseInt(q.correct, 10);
+                if (!Number.isNaN(parsed)) {
+                    correctIdx = parsed >= 1 && parsed <= rawOptions.length ? parsed - 1 : parsed;
+                }
+            }
+
+            const indexedOptions = rawOptions.map((text, idx) => ({
+                text,
+                isCorrect: idx === correctIdx
+            }));
+
+            const shuffledOptions = shuffleArray(indexedOptions);
+            const shuffledCorrectIndex = shuffledOptions.findIndex(item => item.isCorrect);
+
+            shuffledOptions.forEach((optItem, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerHTML = `<span>${optItem.text}</span>`;
+                btn.onclick = () => selectOption(index, shuffledCorrectIndex);
+                optionsContainerEl.appendChild(btn);
+            });
+        }
+
+        function selectOption(selectedIndex, correctIndex) {
+            const q = activeQuizData[currentQuestionIndex];
+            const buttons = optionsContainerEl.querySelectorAll('.option-btn');
+
+            buttons.forEach(btn => btn.disabled = true);
+
+            if (selectedIndex === correctIndex) {
+                buttons[selectedIndex].classList.add('correct');
+                correctCount++;
+                points += POINTS_PER_CORRECT;
+            } else {
+                buttons[selectedIndex].classList.add('incorrect');
+                if (buttons[correctIndex]) {
+                    buttons[correctIndex].classList.add('correct');
+                }
+            }
+
+            updateStats();
+
+            if (q.explanation) {
+                explanationBoxEl.textContent = q.explanation;
+                explanationBoxEl.classList.add('visible');
+            }
+
+            if (currentQuestionIndex === activeQuizData.length - 1) {
+                nextBtnEl.textContent = 'Zobrazit výsledky →';
+            } else {
+                nextBtnEl.textContent = 'Pokračovat →';
+            }
+            nextBtnEl.classList.add('visible');
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < activeQuizData.length) {
+                renderQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            quizBodyEl.style.display = 'none';
+            resultScreenEl.style.display = 'block';
+            progressBarEl.style.width = '100%';
+
+            const total = activeQuizData.length;
+            const maxPoints = total * POINTS_PER_CORRECT;
+            resultScoreEl.textContent = `${correctCount} / ${total}`;
+            resultPointsEl.textContent = `Body: ${points} / ${maxPoints}`;
+
+            const percentage = total > 0 ? (correctCount / total) * 100 : 0;
+            if (percentage === 100) {
+                resultTextEl.textContent = 'Skvělá práce! Znáte toto téma naprosto dokonale.';
+            } else if (percentage >= 60) {
+                resultTextEl.textContent = 'Dobrá práce! Máte velmi dobré znalosti, ale pár detailů vám uniklo.';
+            } else {
+                resultTextEl.textContent = 'Nevadí! Zkuste si kvíz projít znovu a zlepšit svůj výsledek.';
+            }
+        }
+
+        function restartQuiz() {
+            initQuiz();
+        }
+
+        loadTopicDatabase();
+    </script>
+</body>
+</html>

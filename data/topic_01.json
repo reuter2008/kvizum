@@ -1,0 +1,912 @@
+{
+  "topic_id": 1,
+  "topic_name": "Pravěk — Paleolit",
+  "topic_type": "epoch",
+  "sort_order": 1,
+  "descriptions": {
+    "easy": "Základní okruh otázek z dějin umění k období paleolitu (náhodný výběr 20 otázek).",
+    "hard": "Rozšířený a hlubší okruh otázek k umění paleolitu (náhodný výběr 20 otázek)."
+  },
+  "questions": [
+    {
+      "id": 1,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jaká byla hlavní funkce výtvarných projevů v období mladšího paleolitu?",
+      "options": [
+        "Magicko-rituální funkce spojená se zajištěním úspěšného lovu a plodnosti",
+        "Dekorativní výzdoba obytných prostor pro potěšení a reprezentaci majetku",
+        "Zábavní a komerční tvorba určená ke směně mezi vzdálenými kmeny"
+      ],
+      "correct": 1,
+      "explanation": "V paleolitu neexistovalo „umění pro umění“; malby v hlubokých jeskyních i sošky sloužily k rituálům, lovecké magii a kultu plodnosti.",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Který zástupce rodu Homo jako první záměrně opracovával kamenné nástroje (tzv. valounovou industrii), čímž položil základy estetického cítění pro tvar a symetrii?",
+      "options": [
+        "Homo habilis",
+        "Homo neanderthalensis",
+        "Homo floresiensis"
+      ],
+      "correct": 1,
+      "explanation": "Homo habilis (člověk zručný) vytvářel nejstarší kamenné nástroje (oldowan), u nichž se poprvé objevuje vědomá práce s tvarem materiálu.",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jaký typ kamenného nástroje se symetrickým kapkovitým tvarem je typický pro kulturu acheuléen spojenou s druhem Homo erectus?",
+      "options": [
+        "Pěstní klín",
+        "Pazourková čepel na dřevěné násadě",
+        "Hladká broušená sekera s otvorem"
+      ],
+      "correct": 1,
+      "explanation": "Oboustranně opracovaný pěstní klín vykazuje už vysoký smysl pro symetrii a proporce.",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Co považujeme za nejstarší doklady symbolického a estetického chování člověka ještě před vznikem figurálního malířství?",
+      "options": [
+        "Používání červeného okru, sběr neobvyklých přírodnin a jednoduché rytiny na kostech",
+        "Stavbu kamenných menhirů a monumentálních chrámových okrsků",
+        "Výrobu malované keramiky na hrnčířském kruhu"
+      ],
+      "correct": 1,
+      "explanation": "Ještě před jeskynními malbami lidé sbírali fosilie či krystaly, zdobili tělo okrem a ryli geometrické vrypy do kostí a kamene.",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Proč se většina paleolitických nástěnných maleb nachází v hlubokých, těžko přístupných částech jeskyní, a nikoli u vchodu, kde lidé běžně žili?",
+      "options": [
+        "Jeskyně sloužily jako posvátná rituální místa a svatyně, nikoli jako běžné galerie",
+        "U vchodu do jeskyně by barvy okamžitě zničil přímý sluneční svit během jednoho dne",
+        "Vstupní části jeskyní byly v době ledové trvale zatopené mořskou vodou"
+      ],
+      "correct": 1,
+      "explanation": "Hluboké síně fungovaly jako kultovní prostory pro iniciační a magické obřady při světle tukových lampiček.",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jak se v dějinách umění označuje umění vytvářené přímo na stěnách a stropech jeskyní?",
+      "options": [
+        "Parietální umění",
+        "Mobiliární umění",
+        "Epigrafické umění"
+      ],
+      "correct": 1,
+      "explanation": "Parietální (nástěnné) umění je pevně spojeno se skalním podkladem, zatímco přenosné předměty (sošky, ozdoby) patří do umění mobiliárního.",
+      "image": ""
+    },
+    {
+      "id": 7,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která archeologická kultura mladšího paleolitu představuje absolutní vrchol jeskynního malířství v západní Evropě?",
+      "options": [
+        "Magdalénien",
+        "Oldowan",
+        "Únětická kultura"
+      ],
+      "correct": 1,
+      "explanation": "V období magdalénienu vznikly nejslavnější polychromní malby (např. v Altamiře) i propracované rytiny v kosti a parohu.",
+      "image": ""
+    },
+    {
+      "id": 8,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jakým způsobem pravěcí malíři nejčastěji dosahovali dojmu objemu a plastičnosti těl zvířat na stropech jeskyní?",
+      "options": [
+        "Využívali přirozené nerovnosti a vypoukliny skalního podkladu",
+        "Nanášeli silnou vrstvu sádrové omítky, kterou před zaschnutím modelovali",
+        "Vlepovali do stěny broušené desky z barevného mramoru"
+      ],
+      "correct": 1,
+      "explanation": "Umělci dokázali v přirozeném výstupku skály „uvidět“ hřbet bizona nebo bok koně a malbou tvar jen dotvořili.",
+      "image": ""
+    },
+    {
+      "id": 9,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která ze tří slavných jeskyní obsahuje nejstarší známé figurální malby (staré přes 30 000 let) s nečekaně častým zobrazením šelem – jeskynních lvů, medvědů a nosorožců?",
+      "options": [
+        "Chauvet",
+        "Altamira",
+        "Lascaux"
+      ],
+      "correct": 1,
+      "explanation": "Francouzská jeskyně Chauvet překvapila badatele nejen vysokým stářím (aurignacien), ale i tím, že na rozdíl od jiných jeskyní zobrazuje hlavně nebezpečné predátory.",
+      "image": ""
+    },
+    {
+      "id": 10,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "V roce 1879 objevil španělský amatérský archeolog Marcelino Sanz de Sautuola se svou malou dcerou strop pokrytý polychromními bizony. Odborníci malby nejprve označili za podvrh, protože nevěřili schopnostem pravěkého člověka. O jakou jeskyni jde?",
+      "options": [
+        "Altamira",
+        "Niaux",
+        "Pech Merle"
+      ],
+      "correct": 1,
+      "explanation": "Španělská Altamira byla první objevenou jeskyní s paleolitickým uměním a její pravost byla vědecky uznána až po dalších nálezech ve Francii.",
+      "image": ""
+    },
+    {
+      "id": 11,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Pro malby v jeskyni Lascaux je typický tzv. „Sál býků“ a zvláštní způsob zobrazení zvířat, kdy je tělo viděno z profilu, ale rohy a kopyta čelně. Jak se tomuto principu říká?",
+      "options": [
+        "Zkroucená perspektiva",
+        "Lineární perspektiva",
+        "Obrácená perspektiva"
+      ],
+      "correct": 1,
+      "explanation": "Zkroucená perspektiva spojuje nejcharakterističtější pohledy na jednotlivé části těla tak, aby bylo zvíře okamžitě rozpoznatelné.",
+      "image": ""
+    },
+    {
+      "id": 12,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jak se odborně nazývá styl paleolitických maleb, kdy umělec zobrazuje zvíře věrně podle svého bezprostředního pozorování a znalosti jeho pohybu, bez krajinného pozadí a perspektivy?",
+      "options": [
+        "Senzorický realismus",
+        "Akademický klasicismus",
+        "Geometrický abstrakcionismus"
+      ],
+      "correct": 1,
+      "explanation": "Senzorický (smyslový) realismus vychází z ostrého pozorovacího talentu lovců, nikoli z racionální konstrukce prostoru.",
+      "image": ""
+    },
+    {
+      "id": 13,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Který z následujících minerálních pigmentů sloužil v paleolitu k získání teplých odstínů žluté, oranžové a červené barvy?",
+      "options": [
+        "Okr (oxidy železa)",
+        "Lapis lazuli",
+        "Měděnka (oxid měďnatý)"
+      ],
+      "correct": 1,
+      "explanation": "Přírodní okry (hlinité zeminy bohaté na oxidy železa) byly nejdostupnějším a nejtrvanlivějším teplým pigmentem pravěku.",
+      "image": ""
+    },
+    {
+      "id": 14,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Co pravěcí malíři nejčastěji používali k dosažení černé barvy při kresbě obrysů a stínování?",
+      "options": [
+        "Dřevěné uhlí a oxid manganičitý",
+        "Rozemletý grafit z hlubinných dolů",
+        "Inkoust ze sépií dovážený od moře"
+      ],
+      "correct": 1,
+      "explanation": "Černý pigment se získával z dřevěného uhlí nebo z přírodního oxidu manganičitého, který lépe odolával vlhkosti v jeskyních.",
+      "image": ""
+    },
+    {
+      "id": 15,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jakou technikou vytvářeli paleolitičtí lidé tzv. „negativní otisky rukou“ na stěnách jeskyní (např. v Gargas nebo Pech Merle)?",
+      "options": [
+        "Přiložili dlaň na skálu a práškovou či tekutou barvu kolem ní vyfukovali dutou kostí",
+        "Obkreslili ruku ostrým kovovým rydlem a vyplnili ji zlatou fólií",
+        "Otiskli ruku namočenou v rozpuštěném včelím vosku"
+      ],
+      "correct": 1,
+      "explanation": "Rozprašování barvy ústy nebo přes dutou ptačí kost vytvořilo kolem přiložené ruky barevnou aureolu.",
+      "image": ""
+    },
+    {
+      "id": 16,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Proč v jeskynních malbách často vidíme několik obrazů zvířat nakreslených přímo přes sebe (tzv. palimpsest)?",
+      "options": [
+        "Důležitý byl samotný akt rituální tvorby na posvátném místě, nikoli konečný „obraz“",
+        "V jeskyních byl kritický nedostatek volných kamenných stěn",
+        "Starší malby se musely pravidelně přemalovávat kvůli změně stylu každého roku"
+      ],
+      "correct": 1,
+      "explanation": "Pro pravěkého lovce měl význam především samotný rituál vzniku obrazu; na starší kresby se proto bez zábran vrstvily nové.",
+      "image": ""
+    },
+    {
+      "id": 17,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jaký je společný typický rys drtivé většiny paleolitických venuší (např. z Willendorfu či Dolních Věstonic)?",
+      "options": [
+        "Zdůraznění znaků mateřství a plodnosti při potlačení detailů obličeje a chodidel",
+        "Detailní portrétní zachycení konkrétní panovnice s královskou korunou",
+        "Dynamické zobrazení ženské postavy v rychlém běhu s oštěpem v ruce"
+      ],
+      "correct": 1,
+      "explanation": "Obličej i končetiny byly podružné — sošky ztělesňovaly obecný princip plodnosti, života a ochrany rodu, nikoli portrét jednotlivce.",
+      "image": ""
+    },
+    {
+      "id": 18,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Čím je ve světovém měřítku naprosto výjimečná slavná Věstonická venuše?",
+      "options": [
+        "Je to nejstarší známá soška z pálené hlíny (keramiky) na světě",
+        "Je vytesána z čistého průsvitného horského křišťálu",
+        "Jako jediná paleolitická venuše má realisticky vymodelované oči, nos i ústa"
+      ],
+      "correct": 1,
+      "explanation": "Věstonická venuše (z období gravettienu / pavlovienu, cca 29 000–25 000 př. n. l.) patří k nejstarším známým vypáleným keramickým plastikám na světě.",
+      "image": ""
+    },
+    {
+      "id": 19,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která slavná paleolitická venuše byla nalezena v sousedním Rakousku, je vytesána z vápence se stopami červeného okru a má hlavu pokrytou soustřednými prstenci připomínajícími účes či čepičku?",
+      "options": [
+        "Willendorfská venuše",
+        "Petřkovická venuše",
+        "Venuše z Brassempouy"
+      ],
+      "correct": 1,
+      "explanation": "Willendorfská venuše (cca 11 cm vysoká) je jednou z nejikoničtějších drobných plastik evropského gravettienu.",
+      "image": ""
+    },
+    {
+      "id": 20,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "V čem se Petřkovická (Landecká) venuše nalezená v Ostravě zásadně liší od většiny ostatních paleolitických venuší?",
+      "options": [
+        "Má štíhlé, mladistvé proporce bez zdůrazněného břicha a je vyřezána z krevele (hematitu)",
+        "Je odlita z čistého zlata a dosahuje výšky přes jeden metr",
+        "Zobrazuje ženu sedící na trůnu se dvěma lvy po bocích"
+      ],
+      "correct": 1,
+      "explanation": "Bezhlavé torzo z Ostravy-Petřkovic je jedinou známou paleolitickou venuší z hematitu a vyniká subtilní, až moderně působící modelací.",
+      "image": ""
+    },
+    {
+      "id": 21,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která drobná soška z Francie (tzv. „Dáma s kapucí“) představuje vzácnou výjimku mezi paleolitickými plastikami, protože má jemně naznačené rysy lidské tváře?",
+      "options": [
+        "Venuše z Brassempouy",
+        "Venuše z Lespugue",
+        "Venuše z Moravan"
+      ],
+      "correct": 1,
+      "explanation": "Drobná hlavička vyřezaná z mamutoviny z Brassempouy je jedním z nejstarších pokusů o zachycení lidského obličeje.",
+      "image": ""
+    },
+    {
+      "id": 22,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Které materiály se v mladém paleolitu nejčastěji používaly pro drobnou plastiku, rytiny a osobní ozdoby?",
+      "options": [
+        "Mamutovina (klovina), sobí paroh, zvířecí kosti a měkké kameny",
+        "Litý bronz, tepané železo a cínová slitina",
+        "Foukané sklo a glazovaná porcelánová hmota"
+      ],
+      "correct": 1,
+      "explanation": "Lovci využívali především materiály ze své kořisti (mamutí kly, kosti, parohy) a snadno opracovatelné minerály či měkké horniny.",
+      "image": ""
+    },
+    {
+      "id": 23,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Co tvořilo nejčastější osobní ozdoby (šperky) lidí v mladším paleolitu?",
+      "options": [
+        "Provrtané zvířecí zuby (např. liščí špičáky), ulity měkkýšů a korálky z mamutoviny",
+        "Filigránové zlaté náušnice vykládané broušenými diamanty",
+        "Smaltované spony s latinskými nápisy"
+      ],
+      "correct": 1,
+      "explanation": "Závěsky z provrtaných zubů a schránek měkkýšů (často dovážených ze stovek kilometrů) plnily nejen ozdobnou, ale i magickou a statusovou funkci.",
+      "image": ""
+    },
+    {
+      "id": 24,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "K čemu pravděpodobně sloužily tzv. „velitelské hole“ (bâtons percés) z parohu s kruhovým otvorem a bohatou rytou výzdobou?",
+      "options": [
+        "Jako kultovní odznaky moci nebo nástroje k rovnání dřevěných ratišť oštěpů",
+        "Jako hudební flétny pro doprovod chrámových sborů",
+        "Jako klíče k uzamykání dřevěných dveří městských bran"
+      ],
+      "correct": 1,
+      "explanation": "Tyto pečlivě ryté parohové předměty spojovaly praktickou funkci (např. natahování řemínků či rovnání násad) se symbolickým významem.",
+      "image": ""
+    },
+    {
+      "id": 25,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která moravská oblast pod Pálavou proslula po celém světě nálezy z období gravettienu (pavlovienu), včetně nejstarších keramických plastik a dokladů textilu?",
+      "options": [
+        "Dolní Věstonice a Pavlov",
+        "Býčí skála u Adamova",
+        "Kouřim a Libice nad Cidlinou"
+      ],
+      "correct": 1,
+      "explanation": "Tábořiště lovců mamutů v Dolních Věstonicích a Pavlově patří k nejvýznamnějším paleolitickým lokalitám světa.",
+      "image": ""
+    },
+    {
+      "id": 26,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jaký unikátní umělecký předmět byl nalezen na moravském paleolitickém sídlišti Předmostí u Přerova?",
+      "options": [
+        "Mamutí kel s geometricky stylizovanou rytinou ženské postavy",
+        "Nástěnná freska zobrazující bitvu dvou kmenů na břehu řeky",
+        "Bronzový vůz tažený čtyřmi koňmi"
+      ],
+      "correct": 1,
+      "explanation": "Rytina z Předmostí u Přerova dokazuje, že vedle realistických kreseb zvířat existovala v paleolitu i výrazná geometrická stylizace.",
+      "image": ""
+    },
+    {
+      "id": 27,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která jeskyně v Moravském krasu je slavná nálezem mistrovské rytiny souboje dvou bizonů a pasoucích se koní na koňském žebru?",
+      "options": [
+        "Jeskyně Pekárna",
+        "Punkevní jeskyně",
+        "Koněpruské jeskyně"
+      ],
+      "correct": 1,
+      "explanation": "Rytiny na žebrech z jeskyně Pekárna (magdalénien) patří k vrcholům paleolitické zvířecí kresby na našem území.",
+      "image": ""
+    },
+    {
+      "id": 28,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která moravská lokalita v bezprostřední blízkosti Dolních Věstonic přinesla mimořádně bohaté nálezy z období mladého paleolitu, včetně drobných plastik zvířat a dokladů o tehdejším životě lovců?",
+      "options": [
+        "Pavlov",
+        "Kutná Hora",
+        "Mikulčice"
+      ],
+      "correct": 1,
+      "explanation": "Lokalita Pavlov na jižní Moravě patří spolu s Dolními Věstonicemi ke klíčovým nalezištím kultury gravettienu (pavlovienu) s bohatou drobnou plastikou a kostěnou či kamennou industrií.",
+      "image": ""
+    },
+    {
+      "id": 29,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Ve které evropské oblasti se soustřeďuje nejvíce slavných jeskyní s paleolitickými nástěnnými malbami (tzv. franko-kantaberská oblast)?",
+      "options": [
+        "Na pomezí jihozápadní Francie a severního Španělska",
+        "Na pobřeží Baltského moře ve Skandinávii",
+        "V oblasti řeckých ostrovů a Peloponésu"
+      ],
+      "correct": 1,
+      "explanation": "Vápencové masivy jihozápadní Francie (Dordogne, Ardèche) a severního Španělska (Kantábrie) poskytly ideální jeskyně i mikroklima pro uchování maleb.",
+      "image": ""
+    },
+    {
+      "id": 30,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která slonovinová plastika z německé jeskyně Hohlenstein-Stadel (stará asi 35–40 tisíc let) dokládá již v raném mladém paleolitu schopnost spojit lidské a zvířecí znaky do mytické bytosti?",
+      "options": [
+        "Lví muž (soška člověka se lví hlavou)",
+        "Okřídlený býk z Chorsábádu",
+        "Sfinga z Gízy"
+      ],
+      "correct": 1,
+      "explanation": "Lví muž vyřezaný z mamutího klu (aurignacien) je jedním z nejstarších dokladů mytologické a abstraktní představivosti v dějinách umění.",
+      "image": ""
+    },
+    {
+      "id": 31,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jakým způsobem si pravěcí umělci svítili v naprosté tmě hlubokých jeskyní při vytváření nástěnných maleb?",
+      "options": [
+        "Kamennými lampičkami naplněnými živočišným tukem s knotem z mechu či lišejníku",
+        "Voskovými svícny odlévanými do bronzových forem",
+        "Skleněnými lucernami s olivovým olejem"
+      ],
+      "correct": 1,
+      "explanation": "Ve Francii i Španělsku se našly vyhloubené kamenné kahánky se stopami spáleného tuku, které dávaly klidný plamen bez hustého kouře.",
+      "image": ""
+    },
+    {
+      "id": 32,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jak se nejčastěji zobrazovaly lidské postavy v paleolitickém umění?",
+      "options": [
+        "Schematicky, zjednodušeně, někdy se zvířecími prvky",
+        "Jako detailní realistické portréty s přesnou anatomií a mimikou",
+        "Jako monumentální sochy v životní velikosti z tesaného kamene"
+      ],
+      "correct": 1,
+      "explanation": "Lidské figury se v paleolitickém umění objevují méně často než zvířata a bývají pojaty zjednodušeně či symbolicky.",
+      "image": ""
+    },
+    {
+      "id": 33,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Co zobrazuje slavná malba tzv. „Čaroděje“ (bytosti s jeleními parohy, sovíma očima a lidskýma nohama) z francouzské jeskyně Trois-Frères?",
+      "options": [
+        "Spojení lidských a zvířecích znaků pravděpodobně související s šamanismem a loveckými rituály",
+        "Portrét římského císaře v maskovacím loveckém oděvu",
+        "Karikaturu neúspěšného lovce z nepřátelského kmene"
+      ],
+      "correct": 1,
+      "explanation": "Zoomorfní postava z jeskyně Les Trois-Frères patří k nejznámějším dokladům duchovních a šamanských představ mladého paleolitu.",
+      "image": ""
+    },
+    {
+      "id": 34,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jaký význam měly drobné rýhy, tečky a abstraktní geometrické znaky (mřížky, čárky, tečkované linie), které se v jeskyních často objevují vedle zvířat?",
+      "options": [
+        "Šlo pravděpodobně o symbolické značky, jejichž přesný význam dnes neznáme",
+        "Šlo o náhodné škrábance způsobené drápy jeskynních medvědů při zimním spánku",
+        "Šlo o podpisy jednotlivých umělců psané hláskovou abecedou"
+      ],
+      "correct": 1,
+      "explanation": "Abstraktní znaky tvoří nedílnou součást paleolitického umění a dokládají symbolické myšlení pravěkých tvůrců.",
+      "image": ""
+    },
+    {
+      "id": 35,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jak se nazývá starší období doby kamenné, které zabírá drtivou většinu lidských dějin a končí přibližně kolem roku 10 000 př. n. l. s ústupem doby ledové?",
+      "options": [
+        "Paleolit",
+        "Neolit",
+        "Eneolit"
+      ],
+      "correct": 1,
+      "explanation": "Paleolit (starší doba kamenná) je obdobím lovců a sběračů, v jehož mladší fázi vzniklo nejstarší figurální umění.",
+      "image": ""
+    },
+    {
+      "id": 36,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která archeologická kultura mladého paleolitu (cca 30 000 – 22 000 př. n. l.) je spjata s rozkvětem drobných ženských plastik – venuší – napříč Evropou od Francie až po Moravu?",
+      "options": [
+        "Gravettien",
+        "La Tène",
+        "Halštat"
+      ],
+      "correct": 1,
+      "explanation": "Gravettien (u nás v regionální podobě nazývaný pavlovien) proslul jednotným stylem ženských sošek i vyspělým zpracováním kostí a hlíny.",
+      "image": ""
+    },
+    {
+      "id": 37,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Co bylo hlavním zdrojem obživy i umělecké inspirace lidí, kteří tvořili malby v Lascaux nebo sošky v Dolních Věstonicích?",
+      "options": [
+        "Lov velké zvěře (mamutů, sobů, bizonů, divokých koní) a sběr plodin",
+        "Pěstování obilí na zavlažovaných polích a chov domácího skotu",
+        "Námořní obchod s cínem a jantarem mezi Středomořím a Baltem"
+      ],
+      "correct": 1,
+      "explanation": "Způsob života kočovných či polousedlých lovců přímo určoval jejich témata — ústředním motivem byla zvěř, na které záviselo přežití tlupy.",
+      "image": ""
+    },
+    {
+      "id": 38,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jaký vztah měli lidé v paleolitu k pohřbívání svých mrtvých, což také dokládá rozvoj duchovního a estetického cítění?",
+      "options": [
+        "Mrtvé ukládali do hrobů, sypali je červeným okrem a přidávali jim ozdoby i nástroje",
+        "Mrtvé spalovali v keramických urnách a ukládali do rodinných hrobek z cihel",
+        "Nad hroby vztyčovali vysoké kamenné obelisky s vytesanými životopisy"
+      ],
+      "correct": 1,
+      "explanation": "Rituální pohřby s posypem červeného okru (symbolu krve a života) a bohatými náhrdelníky dokládají víru v posmrtnou existenci.",
+      "image": ""
+    },
+    {
+      "id": 39,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Čím pravěcí malíři nejčastěji nanášeli barvu na stěny jeskyní kromě vlastních prstů?",
+      "options": [
+        "Štětci ze zvířecí srsti, mechu nebo roztřepených větviček a vyfukováním dutou kostí",
+        "Ocelovými špachtlemi a bavlněnými malířskými válečky",
+        "Husími brky namáčenými do lihových mořidel"
+      ],
+      "correct": 1,
+      "explanation": "Archeologické nálezy i experimenty potvrzují používání přírodních „štětců“ z chomáčů srsti, mechu i rozprašování barvy dutými kostmi.",
+      "image": ""
+    },
+    {
+      "id": 40,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Který z následujících odstínů v klasické paleolitické jeskynní malbě prakticky chybí, protože pro něj v přírodě nebyl snadno dostupný stálý minerální pigment?",
+      "options": [
+        "Modrá a zelená",
+        "Červená a oranžová",
+        "Černá a hnědá"
+      ],
+      "correct": 1,
+      "explanation": "Paleta paleolitu stála na zemitých pigmentech (okry od žluté po tmavě červenou, hnědé hlinky, černé uhlí a mangan, bílá křída či kaolin).",
+      "image": ""
+    },
+    {
+      "id": 41,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jakým způsobem se v paleolitu docilovalo jemného barevného přechodu a stínování (modelace těla zvířete), například u bizonů v Altamiře?",
+      "options": [
+        "Roztíráním práškového pigmentu prsty, kůží nebo kombinací uhlí a okru na vlhkém vápenci",
+        "Nanášením průsvitných olejových lazur na napnuté lněné plátno",
+        "Vypalováním barevných glazur v uzavřené cihlové peci"
+      ],
+      "correct": 1,
+      "explanation": "Kombinace černé obrysové kresby a roztíraného červeného či hnědého okru umožnila vytvořit překvapivě plastický efekt.",
+      "image": ""
+    },
+    {
+      "id": 42,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jak se nazývá sochařská technika, při níž obraz nevystupuje volně do prostoru ze všech stran, ale je plasticky vymodelován či vytesán na kamenné ploše (např. Venuše z Laussel)?",
+      "options": [
+        "Reliéf",
+        "Volná plastika",
+        "Koláž"
+      ],
+      "correct": 1,
+      "explanation": "V paleolitu se vedle drobných volných sošek objevují i skalní reliéfy (např. Venuše z Laussel nebo vlysy koní v Cap Blanc).",
+      "image": ""
+    },
+    {
+      "id": 43,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která ze slavných paleolitických ženských postav není volnou drobnou soškou do dlaně, ale skalním basreliéfem zobrazujícím ženu držící v pravé ruce zubří roh se zářezy?",
+      "options": [
+        "Venuše z Laussel",
+        "Willendorfská venuše",
+        "Věstonická venuše"
+      ],
+      "correct": 1,
+      "explanation": "Venuše z Laussel (jihozápadní Francie) byla vytesána do vápencového bloku a patří k nejvýznamnějším dokladům paleolitického reliéfního sochařství.",
+      "image": ""
+    },
+    {
+      "id": 44,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jaký optický a kompoziční jev je typický pro umístění postav zvířat na stěnách paleolitických jeskyní?",
+      "options": [
+        "Chybí pevná vodorovná linie země – zvířata se jakoby volně vznášejí v ploše stěny",
+        "Všechna zvířata stojí v přesných vodorovných pásech oddělených geometrickým ornamentem",
+        "Krajina v pozadí je vždy zachycena v hluboké vzdušné perspektivě s horami a stromy"
+      ],
+      "correct": 1,
+      "explanation": "Pravěký obraz nezná rám ani pevnou základnu (zem); figura se volně váže ke tvaru a struktuře samotné skály.",
+      "image": ""
+    },
+    {
+      "id": 45,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Co je to petroglyf, s nímž se setkáváme už v pravěkém umění?",
+      "options": [
+        "Obraz nebo znak vyrytý či vysekaný přímo do povrchu přírodní skály",
+        "Dřevěná maska zdobená peřím exotických ptáků",
+        "Keramická nádoba s plastickým provazcovým otiskem"
+      ],
+      "correct": 1,
+      "explanation": "Na rozdíl od malby (piktogramu) vzniká petroglyf mechanickým rytím nebo vyrážením do kamenného podkladu.",
+      "image": ""
+    },
+    {
+      "id": 46,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Proč pravěcí umělci často zobrazovali koně, bizony nebo jeleny v prudkém pohybu (běh, skok, otáčení hlavy) a s velkou anatomickou přesností?",
+      "options": [
+        "Jejich přežití záviselo na dokonalé znalosti chování zvěře a měli mimořádně vyvinutou vizuální paměť",
+        "Používali mechanické promítací přístroje se soustavou skleněných čoček",
+        "Kreslili podle vycpaných modelů zvířat vystavených v jeskyních"
+      ],
+      "correct": 1,
+      "explanation": "Každodenní pozorování zvěře při lovu vedlo k tzv. senzorickému realismu — dokonalému zachycení siluety, svalů i pohybu.",
+      "image": ""
+    },
+    {
+      "id": 47,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která ze slavných paleolitických venuší z Francie vyniká neobvyklou geometričností – její tělo je složeno z téměř symetrických kulovitých a vejčitých tvarů (prsa, břicho, hýždě)?",
+      "options": [
+        "Venuše z Lespugue",
+        "Petřkovická venuše",
+        "Venuše z Moravan"
+      ],
+      "correct": 1,
+      "explanation": "Slonovinová Venuše z Lespugue ukazuje, že už v gravettienu dokázali tvůrci lidské tělo odvážně abstrahovat do čistých geometrických objemů.",
+      "image": ""
+    },
+    {
+      "id": 48,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Ve které oblasti Francie leží světoznámá jeskyně Lascaux, přezdívaná pro bohatství svých maleb „pravěkou Sixtinskou kaplí“?",
+      "options": [
+        "Dordogne (jihozápadní Francie)",
+        "Normandie (severní pobřeží Francie)",
+        "Alsasko (východní hranice Francie)"
+      ],
+      "correct": 1,
+      "explanation": "Údolí řeky Vézère v regionu Dordogne je nejbohatší oblastí pravěkého jeskynního umění ve Francii (Lascaux, Font-de-Gaume, Les Combarelles).",
+      "image": ""
+    },
+    {
+      "id": 49,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Proč byla originální jeskyně Lascaux v roce 1963 uzavřena pro veřejnost a návštěvníci dnes chodí do její repliky (Lascaux II a IV)?",
+      "options": [
+        "Vydechovaný oxid uhličitý, vlhkost a teplo tisíců turistů začaly ničit malby řasami a vápenatým povlakem",
+        "Jeskyně se při zemětřesení zcela zřítila a originální malby zanikly",
+        "V jeskyni se začala těžit kvalitní vápencová ruda"
+      ],
+      "correct": 1,
+      "explanation": "Mikroklima uzavřených jeskyní je extrémně křehké — otevření masové turistice rychle ohrozilo malby, které přežily desetitisíce let.",
+      "image": ""
+    },
+    {
+      "id": 50,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Který český archeolog vedl v první polovině 20. století slavné výzkumy v Dolních Věstonicích a podílel se na objevu Věstonické venuše (1925)?",
+      "options": [
+        "Karel Absolon",
+        "Bedřich Hrozný",
+        "Josef Dobrovský"
+      ],
+      "correct": 1,
+      "explanation": "Profesor Karel Absolon proslavil moravský paleolit (Dolní Věstonice, Moravský kras) po celém světě.",
+      "image": ""
+    },
+    {
+      "id": 51,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jaké další drobné plastiky kromě slavné ženské sošky se našly v ohništích a sídlištích v Dolních Věstonicích a Pavlově?",
+      "options": [
+        "Drobné keramické figurky zvířat (např. mamutů, medvědů, lvů nebo sov)",
+        "Bronzové sošky římských bohů a císařů",
+        "Porcelánové talíře s modrým kobaltovým dekorem"
+      ],
+      "correct": 1,
+      "explanation": "V Dolních Věstonicích a Pavlově vznikla celá kolekce vypálených hliněných figurek zvířat i záhadných lidských hlaviček.",
+      "image": ""
+    },
+    {
+      "id": 52,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která ze dvou slavných moravských paleolitických venuší je vytvořena z pálené hlíny a která z krevele (hematitu)?",
+      "options": [
+        "Věstonická je z pálené hlíny, Petřkovická je z krevele (hematitu)",
+        "Věstonická je z bronzu, Petřkovická je ze dřeva",
+        "Obě jsou vytesány ze stejného bílého mramoru"
+      ],
+      "correct": 1,
+      "explanation": "Dvě nejznámější venuše z českého území se zásadně liší jak materiálem, tak pojetím tvaru (plné tvary z hlíny vs. štíhlé torzo z hematitu).",
+      "image": ""
+    },
+    {
+      "id": 53,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která paleolitická venuše byla nalezena v obci Moravany nad Váhom na Slovensku a je vyřezána z mamutího klu?",
+      "options": [
+        "Moravianská venuše",
+        "Willendorfská venuše",
+        "Venuše z Laussel"
+      ],
+      "correct": 1,
+      "explanation": "Moravianská venuše (gravettien, cca 22 800 př. n. l.) patří k nejvýznamnějším památkám starší doby kamenné na území bývalého Československa.",
+      "image": ""
+    },
+    {
+      "id": 54,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Co je zvláštního na rytině ženské postavy z moravského naleziště Předmostí u Přerova (vyryté do mamutího klu)?",
+      "options": [
+        "Lidské tělo je převedeno do symetrické geometrické kompozice oválů, trojúhelníků a šrafovaných ploch",
+        "Jde o barevnou akvarelovou malbu na papyrovém svitku",
+        "Postava je zobrazena v brnění na koni se štítem"
+      ],
+      "correct": 1,
+      "explanation": "Rytina z Předmostí je jedinečným příkladem vysoké stylizace a ornamentálního rytmu v umění gravettienu.",
+      "image": ""
+    },
+    {
+      "id": 55,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Kde v České republice leží jeskyně Pekárna, proslulá rytinami souboje bizonů a pasoucích se koní na zvířecích žebrech?",
+      "options": [
+        "V Moravském krasu (nedaleko Brna)",
+        "V Českém ráji (u Turnova)",
+        "Na Šumavě (u Kašperských Hor)"
+      ],
+      "correct": 1,
+      "explanation": "Jeskyně Pekárna v jižní části Moravského krasu patří k nejvýznamnějším lokalitám magdalénienu ve střední Evropě.",
+      "image": ""
+    },
+    {
+      "id": 56,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Který slavný výjev z jeskyně Lascaux vyvolává dodnes nejvíce diskusí odborníků, protože jako jeden z mála zachycuje dramatický děj mezi člověkem a zvířetem?",
+      "options": [
+        "Scéna v tzv. Šachtě se zraněným bizonem, ležící schematickou postavou muže a ptákem na tyči",
+        "Hostina lovců kolem dlouhého kamenného stolu pod širým nebem",
+        "Námořní bitva dvou dřevěných lodí u pobřeží"
+      ],
+      "correct": 1,
+      "explanation": "Výjev v Šachtě v Lascaux je ojedinělou vyprávěcí (narativní) kompozicí v jinak převážně ne-narativním paleolitickém malířství.",
+      "image": ""
+    },
+    {
+      "id": 57,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Která ze tří slavných jeskyní (Altamira, Lascaux, Chauvet) leží ve Španělsku, zatímco zbývající dvě se nacházejí ve Francii?",
+      "options": [
+        "Altamira",
+        "Lascaux",
+        "Chauvet"
+      ],
+      "correct": 1,
+      "explanation": "Altamira se nachází v severním Španělsku (Kantábrie), zatímco Lascaux a Chauvet leží v jižní části Francie.",
+      "image": ""
+    },
+    {
+      "id": 58,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jak se v archeologii a dějinách umění označuje období úplného závěru paleolitu (cca 12 000 – 10 000 př. n. l.) v severním Španělsku a jihozápadní Francii, které navazuje na magdalénien?",
+      "options": [
+        "Azilien (epipaleolit)",
+        "Renesance",
+        "Latén"
+      ],
+      "correct": 1,
+      "explanation": "V azilienu ustupuje velká jeskynní malba a objevují se drobné oblázky malované červenými tečkami a čarami.",
+      "image": ""
+    },
+    {
+      "id": 59,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Který z následujících nálezů NEPATŘÍ do období paleolitu, ale až do mladších pravěkých epoch?",
+      "options": [
+        "Kamenný kruh Stonehenge v Anglii",
+        "Malby v jeskyni Chauvet ve Francii",
+        "Věstonická venuše z jižní Moravy"
+      ],
+      "correct": 1,
+      "explanation": "Megalitické stavby jako Stonehenge vznikaly až v neolitu a době bronzové — v paleolitu lidé monumentální kamennou architekturu nestavěli.",
+      "image": ""
+    },
+    {
+      "id": 60,
+      "topic_id": 1,
+      "lang": "cs",
+      "difficulty": "easy",
+      "question": "Jaké poučení si z dějin paleolitického umění odnášíme pro chápání vývoje lidské kultury?",
+      "options": [
+        "Schopnost tvořit symboly a mistrné výtvarné obrazy existovala už u pravěkých lovců dávno před vznikem písma a měst",
+        "Umění vzniklo až poté, co lidé vynalezli knihtisk a začali stavět kamenné hrady",
+        "Pravěké umění se vyvíjelo od naprosté neumělosti k realismu teprve ve starověkém Římě"
+      ],
+      "correct": 1,
+      "explanation": "Objevy v Chauvetu, Lascaux či Dolních Věstonicích vyvrátily představu o „primitivním“ pravěkém umění a ukázaly vysokou vyspělost prvních tvůrců.",
+      "image": ""
+    }
+  ]
+}
